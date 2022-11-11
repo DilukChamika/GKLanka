@@ -1,0 +1,162 @@
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="indx2.css">
+
+<style type="text/css">
+  #date{
+    
+  }
+  h2{
+    text-align: center;
+  }
+</style>
+
+
+
+    </head>
+    <body>
+
+      <form action="ongrid1.php" method="POST">
+      
+        <h2>Quatation for On Grid Solar System</h2>
+        
+        <fieldset>
+          <legend><b>Quatation Information</b></legend>
+          <label for="date">Date:</label>
+          <input type="text" id="date" name="date">
+          <br>
+          <label for="quatNo">Quatation No:</label>
+          <input type="text" id="quatNo" name="quatNo">
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend><b>Client Information</b></legend>
+          <label for="cname">Name:</label>
+          <input type="text" id="cname" name="cname">
+          <br>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address">
+          <br>
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city">
+          <br>
+          <label for="tel">Phone No:</label>
+          <input type="text" id="tel" name="tel">
+          <br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="cemail">
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend><b>Solar System Information</b></legend>
+          <label for="sysCap">System Capacity:</label>
+          <input type="text" id="sysCap" name="sysCap">
+          <br><br>
+          
+         
+          <label for="inverterBrands">Inverter Brands:</label> <br>
+            <input type="checkbox" id="inverterSolis" name="inverterBrands[]" value="Solis">
+              <label for="inverterSolis"> Solis</label>  &emsp;
+            <input type="checkbox" id="inverterSolax" name="inverterBrands[]" value="Solax">
+              <label for="inverterSolax"> Solax</label> &emsp;
+            <input type="checkbox" id="inverterFox" name="inverterBrands[]" value="Fox">
+              <label for="inverterFox"> Fox</label>
+              <br><br>
+
+ 
+          <label for="panelBrands">Panel Brands:</label> <br>
+            <input type="checkbox" id="PanelTrinasolar" name="panelBrands[]" value="Trinasolar">
+              <label for="PanelTrinasolar"> Trinasolar</label>  &emsp;
+           <input type="checkbox" id="PanelJinko" name="panelBrands[]" value="Jinko">
+              <label for="PanelJinko"> Jinko</label> &emsp;
+            <input type="checkbox" id="PanelJaa" name="panelBrands[]" value="Jaa">
+              <label for="PanelJaa"> Jaa</label>
+              <br><br>
+
+          <label for="panelPower">Panel Power(WATT):</label>
+          <input type="text" id="panelPower" name="panelPower">W
+          <br>
+          <label for="panelCount">Panel Count:</label>
+          <input type="text" id="panelCount" name="panelcount">
+          <br>
+
+          <label for="mountingPara">Special Notation: </label>
+          <textarea id="mountingPara" name="mountingPara">Mounting, DC MCB, Isolator, SPD CEB/LECO Clearing Chargers & metering Connection, Labor charges, Steel Structure (If the AC,DC cable length (Solar Panel to Inverter) is more than 30m, the cost for the increased cable length will have to be charged additional)</textarea>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend><b>Electrical Accessories & Structure</b></legend>
+
+          <label for="elecAcceSPH"><b>Electrical Accessories - Single Phase (1kW - 6kW)</b></label> <br>
+            <input type="checkbox" id="sph1" name="elecAcceSPH[]" value="4pole 32A Isolator">
+              <label for="sph1"> 4pole 32A Isolator</label>  &emsp;
+            <input type="checkbox" id="sph2" name="elecAcceSPH[]" value="4pole AC SPD">
+              <label for="sph2"> 4pole AC SPD</label> &emsp;
+            <input type="checkbox" id="sph3" name="elecAcceSPH[]" value=" DC MCB 2pole">
+              <label for="sph3">  DC MCB 2pole</label>
+              <br><br>
+
+
+          <label for="elecAcceTPH"><b>Electrical Accessories - Three Phase (6kW < )</b></label> <br>
+            <input type="checkbox" id="tph1" name="elecAcceTPH[]" value="4pole 64A Isolator">
+              <label for="tph1"> 4pole 64A Isolator</label>  &emsp;
+            <input type="checkbox" id="tph2" name="elecAcceTPH[]" value="4pole AC SPD">
+              <label for="tph2"> 4pole AC SPD</label> &emsp;
+            <input type="checkbox" id="tph3" name="elecAcceTPH[]" value=" DC MCB 2pole">
+              <label for="tph3">  DC MCB 2pole</label>
+              <br><br>
+
+              <label for="structAlu"><b>Structure - Aluminium</b></label> <br>
+            <input type="checkbox" id="salu1" name="structAlu[]" value="Alu s58 solar railing 14’">
+              <label for="salu1"> Alu s58 solar railing 14’</label>  &emsp;
+            <input type="checkbox" id="salu2" name="structAlu[]" value="L bracket">
+              <label for="salu2"> L bracket</label> &emsp;
+            <input type="checkbox" id="salu3" name="structAlu[]" value=" Asbestoses roof base">
+              <label for="salu3"> Asbestoses roof base</label>
+              <br><br>
+
+              <label for="structStee"><b>Structure - Steel</b></label> <br>
+            <input type="checkbox" id="sstee1" name="structStee[]" value="L clamps">
+              <label for="sstee1">L clamps</label>  &emsp;
+            <input type="checkbox" id="sstee2" name="structStee[]" value="T clamps">
+              <label for="sstee2">T clamps</label> &emsp;
+            <input type="checkbox" id="sstee3" name="structStee[]" value="  Connector clamps">
+              <label for="sstee3">  Connector clamps</label>
+              <br><br>
+
+
+
+        </fieldset>
+
+        <fieldset>
+          <legend><b>Cost Amount Calculations</b></legend>
+          <label for="Price">Cost:</label>
+          <input type="text" id="Price" name="Price">
+          <br>
+          <label for="discount">Discount:</label>
+          <input type="text" id="discount" name="discount">
+          <br>
+        </fieldset>
+          <br>
+
+          <div>
+          <input type="hidden" id="car" name="vehicle[]" value="car">
+          <input type="hidden" id="bike" name="vehicle[]" value="bike">
+          <input type="hidden" id="truck" name="vehicle[]" value="truck">
+          <input type="hidden" id="cycle" name="vehicle[]" value="cycle">
+          <input type="hidden" id="train" name="vehicle[]" value="train">
+          </div>
+          
+        <button type="submit">Submit</button>
+      </form>
+      
+    </body>
+</html>
